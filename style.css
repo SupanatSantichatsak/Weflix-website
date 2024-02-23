@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    padding: 0 30px;
+}
+
+#logo {
+    font-size: 30px;
+}
+
+#logo a{
+    text-decoration:none;
+    color: black;
+}
+
+.weflix-logo{
+    height: 30px;
+}
+
+nav ul.nav-menu {
+    display: flex;
+    flex-direction: row;
+    list-style : none;
+}
+
+nav .nav-menu a {
+    text-decoration:none;
+    color: black;
+    padding: 0 20px;
+}
+
+#utility{
+    display: flex;
+    flex-direction: row;
+}
+
+#utility p{
+    font-weight: 200;
+    font-size: 18px;
+    padding: 0 10px;
+}
+
+.netflix-logo{
+    height: 20px;
+    width: 20px;
+}
+
+.bi-youtube{
+    height: 20px;
+    width: 20px;
+}
+
+#hero{
+    background-image: url("./images/hero.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 50px;
+    height: 800px;
+    
+}
+
+#hero h1{
+    color:whitesmoke;
+    font-size: 80px;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 3px;
+}
+
+.btn-group {
+    display: flex;
+    flex-direction: row;
+    grid-gap: 16px;
+    
+}
+
+.btn-group button{
+    border: 2px solid;
+    padding: 12px 24px;
+    border-radius: 48px;
+    width: 200px;
+    font-size: 14px;
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    grid-gap: 8px;
+}
+
+#status h2,
+#product h2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 40px;
+    font-family: "Kanit", sans-serif;
+}
+
+.weflix-status,
+.shop-product{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    grid-gap: 30px;
+}
+
+.weflix-status li{
+    list-style : none;
+    border-radius: 12px;
+    /*background-color: #FC6736;*/
+    border: 2px solid;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    font-size: 20px;
+    font-family: "Kanit", sans-serif;
+}
+
+.shop-product > li{
+    list-style : none;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius:12px;
+    /*background-color: #FC6736;*/
+    border: 2px solid;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    font-size: 20px;
+    font-family: "Kanit", sans-serif;
+}
+
+.shop-product > li > ul{
+    list-style : none;
+    padding-left: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 30px;
+    position: relative;
+    height: 250px;
+    
+}
+
+.shop-product>li>ul>li{
+    font-size: 20px;
+}
+
+.shop-product button{
+    border: 2px solid;
+    padding: 12px 24px;
+    border-radius: 48px;
+    width: 200px;
+    font-size: 15px;
+    font-weight: bolder;
+    background: none;
+    cursor: pointer;
+}
+
+.shop-product > li{
+    cursor: pointer;
+}
+
+.shop-product a{
+    position: absolute;
+    bottom:   0;
+    margin-bottom: 15px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid #9d9e9e;
+    margin-top: 10px;
+    padding:10px 0px;
+    color: #9d9e9e;
+}
