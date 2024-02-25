@@ -5,6 +5,7 @@
     font-family: "Kanit", sans-serif;
     font-weight: 500;
     font-style: normal;
+    scroll-behavior: smooth;
 }
 
 nav {
@@ -15,7 +16,12 @@ nav {
     font-weight: 400;
     font-style: normal;
     font-size: 20px;
-    padding: 0 30px;
+    padding: 10px 30px;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 #logo {
@@ -25,10 +31,6 @@ nav {
 #logo a{
     text-decoration:none;
     color: black;
-}
-
-.weflix-logo{
-    height: 30px;
 }
 
 nav ul.nav-menu {
@@ -54,14 +56,21 @@ nav .nav-menu a {
     padding: 0 10px;
 }
 
+#utility a{
+    text-decoration: none;
+    color: black;
+}
+
+
 .netflix-logo{
-    height: 20px;
-    width: 20px;
+    height: 25px;
+    width: 25px;
+    border-radius: 3px;
 }
 
 .bi-youtube{
-    height: 20px;
-    width: 20px;
+    height: 25px;
+    width: 25px;
 }
 
 #hero{
@@ -69,46 +78,60 @@ nav .nav-menu a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 50px;
     height: 800px;
-    
+    width: 100%;
+    padding-left: 100px;
 }
 
 #hero h1{
     color:whitesmoke;
     font-size: 80px;
     -webkit-text-stroke-color: black;
-    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-width: 2px;
 }
 
 .btn-group {
     display: flex;
     flex-direction: row;
     grid-gap: 16px;
-    
+}
+
+.btn-group a{
+    text-decoration:none;
 }
 
 .btn-group button{
     border: 2px solid;
-    padding: 12px 24px;
+    padding: 20px 30px;
     border-radius: 48px;
     width: 200px;
-    font-size: 14px;
+    font-size: 28px;
     font-weight: 500;
     justify-content: center;
     align-items: center;
     display: flex;
     flex-direction: row;
     grid-gap: 8px;
+    cursor: pointer;
 }
 
 #status h2,
-#product h2{
+#product h2,
+#review h2,
+#question h2{
     display: flex;
     flex-direction: row;
     justify-content: center;
     font-size: 40px;
-    font-family: "Kanit", sans-serif;
+    margin-bottom: 10px;
+}
+
+#status{
+    padding-top: 70px;
+}
+
+.card-large{
+    height: 200px;
 }
 
 .weflix-status,
@@ -121,7 +144,7 @@ nav .nav-menu a {
 
 .weflix-status li{
     list-style : none;
-    border-radius: 12px;
+    border-radius: 25px;
     /*background-color: #FC6736;*/
     border: 2px solid;
     justify-content: center;
@@ -130,30 +153,27 @@ nav .nav-menu a {
     flex-direction: column;
     width: 400px;
     font-size: 20px;
-    font-family: "Kanit", sans-serif;
 }
 
 .shop-product > li{
     list-style : none;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius:12px;
     /*background-color: #FC6736;*/
     border: 2px solid;
-    display: flex;
-    flex-direction: column;
     width: 400px;
     font-size: 20px;
-    font-family: "Kanit", sans-serif;
+    border-radius: 25px;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .shop-product > li > ul{
     list-style : none;
-    padding-left: 25px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    /*padding-left: 25px;
+    padding-top: 10px;*/
     font-size: 30px;
-    position: relative;
-    height: 250px;
+    height: 180px;
     
 }
 
@@ -172,14 +192,62 @@ nav .nav-menu a {
     cursor: pointer;
 }
 
-.shop-product > li{
-    cursor: pointer;
-}
-
 .shop-product a{
-    position: absolute;
     bottom:   0;
     margin-bottom: 15px;
+}
+#product{
+    padding-top: 70px;
+}
+
+.product-pic{
+    border-radius: 25px;
+    width: 350px;
+}
+
+#question{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 70px;
+}
+
+.questions{
+    border: 2px solid black;
+    height: 500px;
+    border-radius: 25px;
+    width: 1700px;
+}
+
+.questions h3,
+.questions p{
+    padding-top: 20px;
+    padding-left: 40px;
+}
+.questions p{
+    font-size: 20px;
+}
+
+.questions h3{
+    color: hwb(0 0% 0% / 0.774);
+    font-size: 25px;
+}
+
+#review {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding-top: 70px;
+}
+
+.reviews{
+    border: 2px solid black;
+    height: 500px;
+    border-radius: 25px;
+    width: 1700px;
 }
 
 footer{
@@ -190,4 +258,135 @@ footer{
     margin-top: 10px;
     padding:10px 0px;
     color: #9d9e9e;
+}
+
+/*Log in page*/
+.wrap {
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.login {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+.login h2 {
+    text-align: center;
+}
+.login input[type="text"],
+.login input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.login input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.login input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/*product page*/
+.productList{
+    display: flex;
+    justify-content: center;
+}
+
+.poster{
+    height: 250px;
+    width: 500px;
+    border-radius: 25px;
+}
+
+#product-card{
+    margin-bottom: 20px;
+}
+
+.titleCard{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.titleCard > h2{
+    margin-bottom: 20px;
+}
+
+.back{
+    font-size: 20px;
+    margin: 10px 30px;
+}
+.back a{
+    color: #000;
+    text-decoration:none;
+}
+
+#product-card{
+    padding-top: 80px;
+}
+
+/*sub-card*/
+
+.sub-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    grid-gap: 30px;
+}
+
+.sub-card > li{
+    list-style : none;
+    border: 2px solid;
+    width: 400px;
+    font-size: 20px;
+    border-radius: 25px;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sub-card > li > ul{
+    list-style : none;
+    font-size: 30px;
+    height: 100px;
+    
+}
+
+.sub-card>li>ul>li{
+    font-size: 20px;
+}
+
+.sub-card button{
+    border: 2px solid;
+    padding: 12px 24px;
+    border-radius: 48px;
+    width: 200px;
+    font-size: 15px;
+    font-weight: bolder;
+    background: none;
+    cursor: pointer;
+}
+
+.sub-card a{
+    bottom:   0;
+    margin-bottom: 15px;
 }
