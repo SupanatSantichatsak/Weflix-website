@@ -1,0 +1,474 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    scroll-behavior: smooth;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    padding: 10px 30px;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#logo {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+nav ul.nav-menu {
+    display: flex;
+    flex-direction: row;
+    list-style : none;
+}
+
+nav .nav-menu p {
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+#utility{
+    display: flex;
+    flex-direction: row;
+}
+
+#utility p{
+    font-weight: 200;
+    font-size: 18px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+
+.netflix-logo{
+    height: 25px;
+    width: 25px;
+    border-radius: 3px;
+}
+
+.bi-youtube{
+    height: 25px;
+    width: 25px;
+}
+
+#hero{
+    background-image: url("./images/hero.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 800px;
+    width: 100%;
+    padding-left: 100px;
+    
+}
+
+#hero h1{
+    color:whitesmoke;
+    font-size: 80px;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 2px;
+}
+
+.btn-group {
+    display: flex;
+    flex-direction: row;
+    grid-gap: 16px;
+}
+
+.btn-group a{
+    text-decoration:none;
+}
+
+.btn-group button{
+    border: 2px solid;
+    padding: 20px 30px;
+    border-radius: 48px;
+    width: 200px;
+    font-size: 28px;
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    grid-gap: 8px;
+    cursor: pointer;
+}
+
+#status h2,
+#product h2,
+#review h2,
+#question h2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+#status{
+    padding-top: 70px;
+}
+
+.card-large{
+    height: 200px;
+}
+
+.weflix-status,
+.shop-product{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    grid-gap: 30px;
+}
+
+.weflix-status li{
+    list-style : none;
+    border-radius: 25px;
+    /*background-color: #FC6736;*/
+    border: 2px solid;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    font-size: 20px;
+}
+
+.shop-product > li{
+    list-style : none;
+    /*background-color: #FC6736;*/
+    border: 2px solid;
+    font-size: 20px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.shop-product > li > ul{
+    list-style : none;
+    /*padding-left: 25px;
+    padding-top: 10px;*/
+    font-size: 30px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.shop-product>li>ul>li{
+    font-size: 20px;
+}
+
+.shop-product button{
+    border: 2px solid;
+    padding: 12px 24px;
+    border-radius: 48px;
+    width: 200px;
+    font-size: 15px;
+    font-weight: bolder;
+    background: none;
+    cursor: pointer;
+}
+
+.shop-product button{
+    bottom:   0;
+    margin-bottom: 15px;
+}
+#product{
+    padding-top: 70px;
+    margin: 0px 20px;
+}
+
+.product-pic{
+    border-radius: 25px;
+    width: 350px;
+}
+
+#question{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 70px;
+}
+
+.questions{
+    border: 2px solid black;
+    border-radius: 25px;
+    width: 1500px;
+    padding: 20px;
+}
+
+.reviewText{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.questions p{
+    font-size: 20px;
+    margin: 10px 0px;
+}
+
+.questions h3{
+    color: hwb(0 0% 0% / 0.774);
+    font-size: 25px;
+}
+
+#review {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding-top: 70px;
+}
+
+.reviews{
+    border: 2px solid black;
+    height: 500px;
+    border-radius: 25px;
+    width: 1500px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid #9d9e9e;
+    margin-top: 10px;
+    padding:10px 0px;
+    color: #9d9e9e;
+}
+
+/*Log in page*/
+.wrap {
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.login {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+.login h2 {
+    text-align: center;
+}
+.login input[type="text"],
+.login input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.login input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.login input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/*product page*/
+.productList{
+    display: flex;
+    justify-content: center;
+}
+
+.poster{
+    height: 250px;
+    width: 500px;
+    border-radius: 25px;
+}
+
+#product-card{
+    margin-bottom: 20px;
+}
+
+.titleCard{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.titleCard > h2{
+    margin-bottom: 20px;
+}
+
+.back{
+    font-size: 20px;
+    margin: 10px 30px;
+    cursor: pointer;
+}
+
+#product-card{
+    padding-top: 80px;
+}
+
+/*sub-card*/
+
+.sub-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    grid-gap: 30px;
+}
+
+.sub-card > li{
+    list-style : none;
+    border: 2px solid;
+    width: 400px;
+    font-size: 20px;
+    border-radius: 25px;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sub-card > li > ul{
+    list-style : none;
+    font-size: 30px;
+    height: 100px;
+    
+}
+
+.sub-card>li>ul>li{
+    font-size: 20px;
+}
+
+.sub-card button{
+    border: 2px solid;
+    padding: 12px 24px;
+    border-radius: 48px;
+    width: 200px;
+    font-size: 15px;
+    font-weight: bolder;
+    background: none;
+    cursor: pointer;
+    
+}
+
+.sub-card button{
+    bottom:   0;
+    margin-bottom: 15px;
+}
+
+/* Laptop */
+@media (min-width: 1201px) and (max-width: 1600px) {
+    .questions{
+        height: auto;
+        width: 1200px;
+    }
+
+    .reviews{
+        height: 500px;
+        width: 1200px;
+    }
+
+    .shop-product > li{
+        width: 275px;
+    }
+
+    .product-pic{
+        width: 273px;
+    }
+
+    .br{
+        display: block;
+    }
+
+}
+
+/* iPad */
+@media (min-width: 1001px) and (max-width: 1200px) {
+    .questions{
+        height: auto;
+        width: 1000px;
+    }
+
+    .reviews{
+        height: 500px;
+        width: 1000px;
+    }
+
+    .shop-product > li > ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 25px;
+    }
+
+    .shop-product > li{
+        width: 225px;
+    }
+
+    .product-pic{
+        width: 223px;
+    }
+
+    .br{
+        display: block;
+    }
+}
+
+/* Mobile */
+@media (max-width: 1000px) {
+    .questions{
+        height: auto;
+        width: 480px;
+    }
+
+    .reviews{
+        height: 500px;
+        width: 480px;
+    }
+
+    .shop-product{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .shop-product > li{
+        width: 480px;
+    }
+
+    .product-pic{
+        width: 478px;
+    }
+
+}
+
+
