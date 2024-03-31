@@ -26,11 +26,7 @@ nav {
 
 #logo {
     font-size: 30px;
-}
-
-#logo a{
-    text-decoration:none;
-    color: black;
+    cursor: pointer;
 }
 
 nav ul.nav-menu {
@@ -39,10 +35,9 @@ nav ul.nav-menu {
     list-style : none;
 }
 
-nav .nav-menu a {
-    text-decoration:none;
-    color: black;
-    padding: 0 20px;
+nav .nav-menu p {
+    margin: 0 20px;
+    cursor: pointer;
 }
 
 #utility{
@@ -53,12 +48,8 @@ nav .nav-menu a {
 #utility p{
     font-weight: 200;
     font-size: 18px;
-    padding: 0 10px;
-}
-
-#utility a{
-    text-decoration: none;
-    color: black;
+    margin: 0 10px;
+    cursor: pointer;
 }
 
 
@@ -75,12 +66,15 @@ nav .nav-menu a {
 
 #hero{
     background-image: url("./images/hero.png");
+    background-size: cover;
+    background-position: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 800px;
     width: 100%;
     padding-left: 100px;
+    
 }
 
 #hero h1{
@@ -159,10 +153,8 @@ nav .nav-menu a {
     list-style : none;
     /*background-color: #FC6736;*/
     border: 2px solid;
-    width: 400px;
     font-size: 20px;
     border-radius: 25px;
-    padding-top: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -174,7 +166,9 @@ nav .nav-menu a {
     padding-top: 10px;*/
     font-size: 30px;
     height: 180px;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .shop-product>li>ul>li{
@@ -192,12 +186,13 @@ nav .nav-menu a {
     cursor: pointer;
 }
 
-.shop-product a{
+.shop-product button{
     bottom:   0;
     margin-bottom: 15px;
 }
 #product{
     padding-top: 70px;
+    margin: 0px 20px;
 }
 
 .product-pic{
@@ -215,18 +210,18 @@ nav .nav-menu a {
 
 .questions{
     border: 2px solid black;
-    height: 500px;
     border-radius: 25px;
-    width: 1700px;
+    width: 1500px;
+    padding: 20px;
 }
 
-.questions h3,
-.questions p{
-    padding-top: 20px;
+.reviewText{
     padding-left: 40px;
+    padding-right: 40px;
 }
 .questions p{
     font-size: 20px;
+    margin: 10px 0px;
 }
 
 .questions h3{
@@ -247,7 +242,7 @@ nav .nav-menu a {
     border: 2px solid black;
     height: 500px;
     border-radius: 25px;
-    width: 1700px;
+    width: 1500px;
 }
 
 footer{
@@ -333,10 +328,7 @@ footer{
 .back{
     font-size: 20px;
     margin: 10px 30px;
-}
-.back a{
-    color: #000;
-    text-decoration:none;
+    cursor: pointer;
 }
 
 #product-card{
@@ -384,9 +376,99 @@ footer{
     font-weight: bolder;
     background: none;
     cursor: pointer;
+    
 }
 
-.sub-card a{
+.sub-card button{
     bottom:   0;
     margin-bottom: 15px;
 }
+
+/* Laptop */
+@media (min-width: 1201px) and (max-width: 1600px) {
+    .questions{
+        height: auto;
+        width: 1200px;
+    }
+
+    .reviews{
+        height: 500px;
+        width: 1200px;
+    }
+
+    .shop-product > li{
+        width: 275px;
+    }
+
+    .product-pic{
+        width: 273px;
+    }
+
+    .br{
+        display: block;
+    }
+
+}
+
+/* iPad */
+@media (min-width: 1001px) and (max-width: 1200px) {
+    .questions{
+        height: auto;
+        width: 1000px;
+    }
+
+    .reviews{
+        height: 500px;
+        width: 1000px;
+    }
+
+    .shop-product > li > ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 25px;
+    }
+
+    .shop-product > li{
+        width: 225px;
+    }
+
+    .product-pic{
+        width: 223px;
+    }
+
+    .br{
+        display: block;
+    }
+}
+
+/* Mobile */
+@media (max-width: 1000px) {
+    .questions{
+        height: auto;
+        width: 480px;
+    }
+
+    .reviews{
+        height: 500px;
+        width: 480px;
+    }
+
+    .shop-product{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .shop-product > li{
+        width: 480px;
+    }
+
+    .product-pic{
+        width: 478px;
+    }
+
+}
+
+
